@@ -22,12 +22,14 @@ int main() {
   float distance, amount;
 
   printf("Distance travelled: ");
-  scanf("%f", distance);
+  scanf("%f", &distance);
 
   if(distance<=30)
     amount=50*distance;
   else
     amount=1500+40*(distance-30);
+
+  printf("Amount for you total travel: %f\n",amount);
   
   return 0;
 }
